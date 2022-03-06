@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <section class="container">
+        <h1>Signup Form</h1>
+        <ul>
+            <li>All fields must be filed</li>
+            <li>User must contain only letters and/or numbers</li>
+            <li>User must be between 3 and 12 chars</li>
+            <li>Password must be between 6 and 12 chars</li>
+        </ul>
+
+        <form action="/" method="post" class="form">
+            <label>First Name</label>
+            <input type="text" class="firstName validate">
+            <label>Family Name</label>
+            <input type="text" class="familyName validate">
+            <label>CPF</label>
+            <input type="text" class="cpf validate">
+            <label>Username</label>
+            <input type="text" class="username validate">
+            <label>Password</label>
+            <input type="password" class="password validate">
+            <label>Repeat Password</label>
+            <input type="password" class="repeatPassword validate">
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <script src="./assets/js/cpfValidator.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
